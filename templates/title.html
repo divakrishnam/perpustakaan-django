@@ -1,1 +1,6 @@
-<h1>PERPUSTAKAAN</h1>
+<center>
+    <h1>PERPUSTAKAAN</h1>
+    {% if user.is_authenticated %}
+    <h4>{{user}} | <a href="{% url 'keluar' %}">Keluar</a></h4>
+    {% endif %}
+</center>
